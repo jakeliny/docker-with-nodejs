@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  node:
+    image: thasfin/node-example:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/usr/src/app
