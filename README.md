@@ -2,5 +2,5 @@
 Project with Docker examples with NodeJS
 
 ## How to use
-```docker-compose up```
+```$ docker-compose up```
 
