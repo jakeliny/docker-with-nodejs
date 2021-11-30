@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  nginx:
+    image: thasfin/nginx-fc:latest
+    ports:
+      - "8080:80"
+    volumes:
+    - ./:/usr/share/nginx/html
+
+  mysql:
+    image: mariadb:10.5.8
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=test
+    volumes:
+      - ./data:/var/lib/mysql
